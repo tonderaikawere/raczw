@@ -42,7 +42,7 @@ const galleryImages = [
     category: "leadership",
     title: "Apostle Chigome Teaching",
     date: "2025-01-12",
-    location: "City Center Branch",
+    location: "City Centre Branch",
     featured: true,
   },
   {
@@ -92,7 +92,7 @@ const galleryImages = [
     category: "outreach",
     title: "Community Food Drive",
     date: "2024-12-01",
-    location: "Phumula Branch",
+    location: "Pumula Branch",
     featured: false,
   },
   {

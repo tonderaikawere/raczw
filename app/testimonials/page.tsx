@@ -29,10 +29,10 @@ const testimonials = [
   {
     id: 2,
     name: "John K. Ndlovu",
-    location: "City Center Branch",
+    location: "City Centre Branch",
     date: "December 2024",
     rating: 5,
-    testimony: "The deliverance ministry at Cowdry Park B Branch set me free from years of bondage. The prayers and guidance from Pastor Khaks helped me rediscover my identity in Christ. Today, I'm serving in the men's ministry and helping others find freedom.",
+    testimony: "The deliverance ministry at Cowdray Park B Branch set me free from years of bondage. The prayers and guidance from Pastor Khaks helped me rediscover my identity in Christ. Today, I'm serving in the men's ministry and helping others find freedom.",
     category: "Deliverance",
     image: "/images/mens-ministry.jpg",
     featured: true,
@@ -62,7 +62,7 @@ const testimonials = [
   {
     id: 5,
     name: "Esther M. Dube",
-    location: "Phumula Branch",
+    location: "Pumula Branch",
     date: "September 2024",
     rating: 5,
     testimony: "The women's ministry empowered me to overcome years of low self-esteem. Through the teachings and sisterhood, I discovered my worth in Christ. Now I'm a leader in the women's fellowship.",
