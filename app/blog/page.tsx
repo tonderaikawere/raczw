@@ -120,11 +120,13 @@ export default function BlogPage() {
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {blogPosts.filter(post => post.featured).map((post) => (
                 <article key={post.id} className="group">
-                  <div className="relative rounded-2xl overflow-hidden mb-6">
-                    <img
+                  <div className="relative rounded-2xl overflow-hidden mb-6 h-64 sm:h-80">
+                    <Image
                       src={post.image}
                       alt={post.title}
-                      className="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
