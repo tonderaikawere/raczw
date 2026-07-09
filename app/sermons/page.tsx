@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Play, Clock, Calendar, Download, Share2, Heart, Filter, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -129,11 +130,13 @@ export default function SermonsPage() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              <div className="relative rounded-2xl overflow-hidden">
-                <img
+              <div className="relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-96">
+                <Image
                   src={sermons[0].thumbnail}
                   alt={sermons[0].title}
-                  className="w-full h-64 sm:h-80 lg:h-96 object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <Button size="lg" className="gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/30">
