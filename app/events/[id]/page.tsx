@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Calendar, MapPin, Clock, ArrowLeft, Users, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -135,8 +136,8 @@ export default async function EventPage({
                 </Button>
               </div>
 
-              <div className="relative rounded-2xl overflow-hidden border border-border mb-8">
-                <img src={event.image} alt={event.title} className="w-full h-64 sm:h-96 object-cover" />
+              <div className="relative rounded-2xl overflow-hidden border border-border mb-8 h-64 sm:h-96">
+                <Image src={event.image} alt={event.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" priority />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
                   <span className="inline-flex px-3 py-1 bg-accent text-accent-foreground text-sm font-bold rounded-full mb-3">
