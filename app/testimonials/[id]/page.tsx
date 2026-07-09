@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Star, Quote, Calendar, MapPin, ArrowLeft, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -158,8 +159,8 @@ export default async function TestimonialPage({
                 <Quote className="absolute -top-6 -left-6 w-20 h-20 text-primary/10" />
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
-                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-                    <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
+                  <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0 relative">
+                    <Image src={testimonial.image} alt={testimonial.name} fill sizes="80px" className="object-cover" />
                   </div>
 
                   <div className="flex-1 min-w-0">
