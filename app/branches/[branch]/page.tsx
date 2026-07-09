@@ -653,11 +653,13 @@ export default async function BranchPage({
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="relative">
-                  <img
+                <div className="relative h-80 md:h-96">
+                  <Image
                     src={branchData.pastorImage}
                     alt={`${branchData.pastor}`}
-                    className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-xl"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover rounded-2xl shadow-xl"
                   />
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2">
                     <Button className="bg-primary text-primary-foreground px-6 py-3 rounded-full shadow-lg">
