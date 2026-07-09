@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Play, Calendar, Clock, Download, ArrowLeft, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -164,8 +165,8 @@ export default async function SermonPage({
 
               <div className="grid lg:grid-cols-5 gap-8 items-start">
                 <div className="lg:col-span-3">
-                  <div className="relative rounded-2xl overflow-hidden border border-border">
-                    <img src={sermon.thumbnail} alt={sermon.title} className="w-full h-64 sm:h-96 object-cover" />
+                  <div className="relative rounded-2xl overflow-hidden border border-border h-64 sm:h-96">
+                    <Image src={sermon.thumbnail} alt={sermon.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" priority />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                       <Button size="lg" className="gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/30">
                         <Play className="w-5 h-5" />
