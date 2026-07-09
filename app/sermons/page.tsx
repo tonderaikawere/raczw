@@ -221,11 +221,13 @@ export default function SermonsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {sermons.slice(1).map((sermon) => (
                 <div key={sermon.id} className="bg-card rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow">
-                  <div className="relative">
-                    <img
+                  <div className="relative h-48">
+                    <Image
                       src={sermon.thumbnail}
                       alt={sermon.title}
-                      className="w-full h-48 object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                       <Button asChild size="sm" className="gap-1 bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/30">
