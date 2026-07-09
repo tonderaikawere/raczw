@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/beliefs",
   },
+  openGraph: {
+    title: "What We Believe | Redemption Apostolic Church",
+    description: "Learn about our core beliefs, doctrines, and theological foundations as an Apostolic church rooted in biblical truth.",
+    url: "/beliefs",
+  },
 };
 
 export default function BeliefsPage() {
