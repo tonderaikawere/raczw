@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import {
   MapPin,
@@ -557,10 +558,13 @@ export default async function BranchPage({
         {/* Hero Section with Father's Picture */}
         <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src={branchData.image}
               alt={`${branchData.name} - Apostle R. Chigome`}
-              className="w-full h-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
           </div>
