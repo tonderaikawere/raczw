@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import Image from "next/image";
 import { Footer } from "@/components/footer";
 import { Calendar, MapPin, Clock, Users, Heart, Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -134,10 +135,12 @@ export default function EventsPage() {
               {upcomingEvents.filter(event => event.featured).map((event) => (
                 <div key={event.id} className="bg-card rounded-2xl overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">
                   <div className="relative h-48">
-                    <img
+                    <Image
                       src={event.image}
                       alt={event.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute top-4 left-4">
