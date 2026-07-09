@@ -721,12 +721,14 @@ export default async function BranchPage({
               {branchData.gallery.map((image: string, index: number) => (
                 <div
                   key={index}
-                  className="relative group overflow-hidden rounded-xl"
+                  className="relative group overflow-hidden rounded-xl h-48"
                 >
-                  <img
+                  <Image
                     src={image}
                     alt={`${branchData.name} - Gallery image ${index + 1}`}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <Button
