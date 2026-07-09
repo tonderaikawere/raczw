@@ -194,11 +194,13 @@ export default function TestimonialsPage() {
                     {testimonial.testimony}
                   </p>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                      <img
+                    <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 relative">
+                      <Image
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="w-full h-full object-cover"
+                        fill
+                        sizes="40px"
+                        className="object-cover"
                       />
                     </div>
                     <div className="flex-1 min-w-0">
