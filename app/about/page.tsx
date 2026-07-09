@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/about",
   },
+  openGraph: {
+    title: "About Us | Redemption Apostolic Church",
+    description: "Learn about our divine origin, the Royal Blue Ribbon vision, our mission, vision, and core values of Love, Peace, and Unity.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {
