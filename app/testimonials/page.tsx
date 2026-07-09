@@ -118,11 +118,13 @@ export default function TestimonialsPage() {
                   <div className="absolute -top-4 -left-4 text-6xl text-primary/20">"</div>
                   <div className="bg-card rounded-2xl p-8 border border-border relative h-full flex flex-col">
                     <div className="flex items-start gap-4 mb-6">
-                      <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-                        <img
+                      <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 relative">
+                        <Image
                           src={testimonial.image}
                           alt={testimonial.name}
-                          className="w-full h-full object-cover"
+                          fill
+                          sizes="64px"
+                          className="object-cover"
                         />
                       </div>
                       <div className="flex-1">
