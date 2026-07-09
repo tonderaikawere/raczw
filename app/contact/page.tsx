@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/contact",
   },
+  openGraph: {
+    title: "Contact Us | Redemption Apostolic Church",
+    description: "Get in touch with Redemption Apostolic Church. Visit us, call, or send a message. We'd love to hear from you.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {
