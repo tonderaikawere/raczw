@@ -13,6 +13,8 @@ const quickLinks = [
   { href: "/prayer", label: "Prayer Requests" },
   { href: "/gallery", label: "Gallery" },
   { href: "/events", label: "Events" },
+  { href: "/blog", label: "News & Updates" },
+  { href: "/resources", label: "Resources" },
   { href: "/donate", label: "Partner With Us" },
   { href: "/contact", label: "Contact" },
 ];
